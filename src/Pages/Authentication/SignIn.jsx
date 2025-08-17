@@ -131,19 +131,19 @@ export default function SignIn() {
             </Link>
 
             {/* Terms checkbox */}
-            <div className="flex items-start">
-              <div className="flex items-center h-5">
+            <div className="flex items-start ">
+              <div className="flex items-center h-5 ">
                 <input
                   id="terms"
                   type="checkbox"
-                  className="w-4 h-4 text-blue-600 bg-white/70 backdrop-blur-sm border-gray-300 rounded "
+                  className="w-4 h-4 text-blue-600 cursor-pointer bg-white/70 backdrop-blur-sm border-gray-300 rounded "
                   {...register("terms", {
                     required: "You must agree to the terms of service",
                   })}
                 />
               </div>
               <div className="ml-3 text-sm">
-                <label htmlFor="terms" className="text-tagline">
+                <label htmlFor="terms" className="text-tagline cursor-pointer">
                   I agree to the{" "}
                   <a
                     href="#"
